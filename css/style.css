@@ -1,0 +1,35 @@
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+#optionForm{
+    background-color: rgb(113, 255, 215);
+    width: 100vw;
+    padding: 10px
+}
+
+.wrongAnswer{
+    background-color: rgb(255, 0, 0);
+}
+
+.rightAnswer{
+    background-color: rgb(117, 211, 117);
+}
+
+.answerButton{
+    width: 300px;
+    padding: 5px;
+    margin: 1px;
+}
+
+.questionContainer{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}

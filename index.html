@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="/js/script.js" defer></script>
+</head>
+
+<body>
+
+    <main class="flex">
+
+        <h1 id="gameHeader">Quiz Time!</h1>
+
+        <form class="flex" id="optionForm">
+
+            <div id="nameDiv">
+                <label for="nameInput">Name:</label>
+                <input name="nameInput" id="nameInput" placeholder="Enter name here" type="text" required>
+            </div>
+            <br>
+            <div id="numberDiv">
+                <label for="numberOfQuestions">How many questions?</label>
+                <input name="numberOfQuestions" id="numberOfQuestions" placeholder="10 by default" type="number"
+                    max="100">
+            </div>
+            <br>
+
+            <div id="levelDiv">
+                <label for="level">Choose your level:</label>
+                <select name="level" id="levelSelector">
+                    <option value="easy">Easy by default</option>
+                    <option value="easy">easy</option>
+                    <option value="medium">medium</option>
+                    <option value="hard">hard</option>
+                </select>
+            </div>
+            <br>
+
+            <div id="cat1Div">
+                <label for="category1">Choose a category:</label>
+                <select name="category1" id="categorySelector1">
+                    <option style="text-align: center;" value="">Random</option>
+                    <option value="9">General Knowledge</option>
+                    <option value="10">Entertainment: Books</option>
+                    <option value="11">Entertainment: Film</option>
+                    <option value="12">Entertainment: Music</option>
+                    <option value="13">Entertainment: Musicals & Theatres</option>
+                    <option value="14">Entertainment: Television</option>
+                    <option value="15">Entertainment: Video Games</option>
+                    <option value="16">Entertainment: Board Games</option>
+                    <option value="17">Science & Nature</option>
+                    <option value="18">Science: Computers</option>
+                    <option value="19">Science: Mathematics</option>
+                    <option value="20">Mythology</option>
+                    <option value="21">Sports</option>
+                    <option value="22">Geography</option>
+                    <option value="23">History</option>
+                    <option value="24">Politics</option>
+                    <option value="25">Art</option>
+                    <option value="26">Celebrities</option>
+                    <option value="27">Animals</option>
+                    <option value="28">Vehicles</option>
+                    <option value="29">Entertainment: Comics</option>
+                    <option value="30">Science: Gadgets</option>
+                    <option value="31">Entertainment: Japanese Anime & Manga</option>
+                    <option value="32">Entertainment: Cartoon & Animations</option>
+                </select>
+            </div>
+
+            <br>
+
+            <button id="startQuiz">Start the Quiz!</button>
+
+        </form>
+        <br>
+
+        <div class="flex" id="resultContainer">
+            Player's result will be displayed here.
+        </div>
+
+        <div class="flex" id="quizContainer">
+        </div>
+        </div>
+
+        <br>
+
+        <button id="resetButton">Reset Game!</button>
+
+    </main>
+</body>
+
+</html>
